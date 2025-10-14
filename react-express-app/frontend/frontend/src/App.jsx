@@ -11,7 +11,6 @@ function App() {
     fetch('http://localhost:3000/api/saluto')
       .then(response => response.json())
       .then(data => {
-        console.log("Dati ricevuti:", data); // <- controlla qui
         setMessaggio(data.messaggio);
       })
       .catch(error => {

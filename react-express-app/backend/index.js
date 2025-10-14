@@ -8,7 +8,7 @@ app.use(cors())
 
 app.get('/api/saluto', (req,res) => {
     console.log("Serving a new request!")
-    res.json({messaggio:'Welcome to My Express App!'});
+    res.json({messaggio:'Welcome to My React-Express App!'});
 });
 
 app.listen(PORT);
