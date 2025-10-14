@@ -5,15 +5,14 @@ import './App.css'
 import FirstComponent from './components/FirstComponent'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   const [messaggio, setMessaggio] = useState('Caricamento...');
 
   useEffect(() => {
     fetch('http://localhost:3000/api/saluto')
-      .then(response =>{ 
-        response.json(); 
-        console.log(response);
+      .then(response => response.json())
+      .then(data => {
+        console.log("Dati ricevuti:", data); // <- controlla qui
+        setMessaggio(data.messaggio);
       })
       .catch(error => {
         console.error('Errore nella chiamata API: ', error);

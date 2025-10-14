@@ -1,12 +1,14 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(cors())
 
 app.get('/api/saluto', (req,res) => {
     console.log("Serving a new request!")
-    res.send({"messaggio":'Welcome to My Express App!'});
+    res.json({messaggio:'Welcome to My Express App!'});
 });
 
 app.listen(PORT);
