@@ -1,0 +1,19 @@
+services:
+  frontend:
+    image: frontend
+    build:
+      context: react-express-app/frontend
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 5173:5173
+  backend:
+    image: backend
+    build:
+      context: react-express-app/backend
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
