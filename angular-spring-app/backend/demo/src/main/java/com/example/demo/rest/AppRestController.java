@@ -5,12 +5,14 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.Getter;
 import lombok.Setter;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @RestController
 public class AppRestController {
     
+    @CrossOrigin(origins = "*")
     @ResponseBody
     @GetMapping("/api/welcome")
     public InnerAppRestController welcome() {
