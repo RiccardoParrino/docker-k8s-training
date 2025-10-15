@@ -7,8 +7,13 @@
             "preLaunchTask": "docker-run: debug",
             "platform": "node",
             "node": {
+<<<<<<< HEAD
                 "package": "${workspaceFolder}/angular-express-app/backend/package.json",
                 "localRoot": "${workspaceFolder}/angular-express-app/backend"
+=======
+                "package": "${workspaceFolder}/react-express-app/frontend/package.json",
+                "localRoot": "${workspaceFolder}/react-express-app/frontend"
+>>>>>>> react-express-app
             }
         }
     ]

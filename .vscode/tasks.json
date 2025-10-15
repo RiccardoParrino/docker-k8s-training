@@ -6,12 +6,21 @@
 			"label": "docker-build",
 			"platform": "node",
 			"dockerBuild": {
+<<<<<<< HEAD
 				"dockerfile": "${workspaceFolder}/angular-express-app/backend/Dockerfile",
 				"context": "${workspaceFolder}/angular-express-app/backend",
 				"pull": true
 			},
 			"node": {
 				"package": "${workspaceFolder}/angular-express-app/backend/package.json"
+=======
+				"dockerfile": "${workspaceFolder}/react-express-app/frontend/Dockerfile",
+				"context": "${workspaceFolder}/react-express-app/frontend",
+				"pull": true
+			},
+			"node": {
+				"package": "${workspaceFolder}/react-express-app/frontend/package.json"
+>>>>>>> react-express-app
 			}
 		},
 		{
@@ -22,7 +31,11 @@
 			],
 			"platform": "node",
 			"node": {
+<<<<<<< HEAD
 				"package": "${workspaceFolder}/angular-express-app/backend/package.json"
+=======
+				"package": "${workspaceFolder}/react-express-app/frontend/package.json"
+>>>>>>> react-express-app
 			}
 		},
 		{
@@ -38,7 +51,11 @@
 				}
 			},
 			"node": {
+<<<<<<< HEAD
 				"package": "${workspaceFolder}/angular-express-app/backend/package.json",
+=======
+				"package": "${workspaceFolder}/react-express-app/frontend/package.json",
+>>>>>>> react-express-app
 				"enableDebugging": true
 			}
 		}
