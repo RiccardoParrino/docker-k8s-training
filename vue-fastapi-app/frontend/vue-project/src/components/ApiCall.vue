@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Data from API:</h1>
+        <h3>Data from API:</h3>
         <pre>{{ data }}</pre>
     </div>
 </template>
@@ -20,7 +20,7 @@ export default {
     mounted() {
         axios.get('http://localhost:8000/api/welcome')
             .then( response => {
-                this.data = response.data;
+                this.data = response.data.msg;
             } ) 
             .catch ( error => {
                 this.error = error;
